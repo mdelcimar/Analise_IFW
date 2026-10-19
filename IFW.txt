@@ -1,0 +1,37 @@
+UWF Network Traffic Flow Datasets
+The complete set of files are in PCAP and parquet formats and available at: https://datasets.uwf.edu/data/. This dataset consists of Zeek data files labelled using the MITRE ATT&CK Framework. The files in csv format are a subset of the files in parquet format, mainly made available for people who do not have access to "Big Data" technologies.
+
+24,1100575
+
+#Identificação e Sessão  
+ts: Timestamp numérico (formato Unix) que indica o exato momento de início da conexão.
+datetime: Data e hora formatadas em texto.
+uid: Unique Identifier. Uma string alfanumérica única.
+community_id: Hash padronizado (Community ID) calculado a partir da 5-tuple (IPs, portas e protocolo). Permite cruzar esse log com dados de outras ferramentas como Suricata, Snort e Zeek.
+
+#Origem e Destino
+src_ip / orig_ip: Endereço IP do host que iniciou a conexão (origem/cliente).
+src_port: Porta de origem utilizada para a conexão.
+dest_ip: Endereço IP de destino da conexão (servidor).
+dest_port: Porta de destino no servidor.
+local_orig: Indicador booleano (true/false) que aponta se o IP de origem pertence à rede local interna.
+local_resp: Indicador booleano (true/false) que aponta se o IP de destino/resposta pertence à rede local interna.
+
+#Serviço e Protocolo
+protocol: Protocolo de camada de transporte utilizado (ex: tcp, udp, icmp).
+service: Aplicação ou protocolo de camada de aplicação identificado pela análise do tráfego (ex: http, dns, ssl, ssh), independente da porta usada.
+duration: Tempo total de duração da conexão em segundos.
+conn_state: Estado da conexão no término da análise (ex: SF para conexão TCP normal com SYN e FIN; S0 para tentativa de conexão sem resposta; REJ para conexão rejeitada).
+
+#Métricas de Tráfego
+orig_pkts: Número total de pacotes enviados pelo host de origem ao destino.
+orig_bytes: Volume de dados de camada de aplicação enviados pela origem (exclui cabeçalhos de rede).
+orig_ip_bytes: Volume total em bytes enviados pela origem, incluindo os cabeçalhos IP.
+resp_pkts: Número total de pacotes enviados pelo host de destino em resposta à origem.
+resp_bytes: Volume de dados de camada de aplicação retornados pelo destino.
+resp_ip_bytes: Volume total em bytes retornados pelo destino, incluindo os cabeçalhos IP.
+missed_bytes: Quantidade de bytes perdidos na captura (pacotes dropados pela interface de rede ou não capturados).
+
+#Análise Comportamental e Ameaças
+history: Sequência resumida em letras representando os sinalizadores (flags) TCP observados durante a conexão (ex: ShADf indica SYN, SYN-ACK, ACK, Data e FIN).
+mitre_attack_tactics: Mapeamento do comportamento ou tráfego analisado com as táticas da matriz MITRE ATT&CK (ex: Initial Access, Execution, Exfiltration), geralmente inserido por pipelines de enriquecimento de SIEM ou XDR.

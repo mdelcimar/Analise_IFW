@@ -1,0 +1,10 @@
+resp_pkts,service,orig_ip_bytes,local_resp,missed_bytes,protocol,duration,conn_state,dest_ip,orig_pkts,community_id,resp_ip_bytes,dest_port,orig_bytes,local_orig,datetime,history,resp_bytes,uid,src_port,ts,src_ip,mitre_attack_tactics
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:0NHjBzm/SYgEDpWGxXJo+4uvd6w=,0,1025,,false,2022-01-11T10:59:06.546Z,D,,CV1LK24JAH8ReZzkOd,49428,1.641920346546274E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:277w6O6OemOm3ReXyxdPgIXa8G4=,0,1055,,false,2022-01-11T10:59:06.333Z,D,,C2UKM33kh4rpeuvs6g,49428,1.641920346333285E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:2XfQEAEF14QDc7aMYiGW5w1kgkM=,0,1058,,false,2022-01-11T10:59:06.139Z,D,,Chow2c1NHeNIK3p9B5,49428,1.641920346139631E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:3mlQ3QcrwBCTN81CIpXlOysHgd8=,0,1100,,false,2022-01-11T10:59:07.034Z,D,,CirrzB4hc93E2Gpzgk,49428,1.641920347034178E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:4vFQLsv/++QSFzg5CkyBUOZetKk=,0,1029,,false,2022-01-11T10:59:06.942Z,D,,Cvy94ywRY0jYHM3n5,49428,1.641920346942615E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:4xggdUSBblLrWGq1NhvfIXFyLPI=,0,1057,,false,2022-01-11T10:59:06.635Z,D,,CusMBd3gMYCuWpMnob,49429,1.641920346635778E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:52JG2z2BImnrFGOHPWOgbK7Qbis=,0,1038,,false,2022-01-11T10:59:07.351Z,D,,COQPdn1z6RyOfohaCg,49428,1.641920347351489E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:55pCcSMNe/u/8HinSYwkRzmtNmg=,0,1043,,false,2022-01-11T10:59:05.836Z,D,,C5MNg22mxJXupdKECe,49429,1.641920345836982E9,143.88.11.10,none
+0,,100,false,0,udp,,S0,143.88.11.1,1,1:5p1gXF8NnmDgG1vY1EJohwaykfw=,0,1047,,false,2022-01-11T10:59:06.946Z,D,,CMPLtt3Gc5cvGsrjug,49428,1.64192034694692E9,143.88.11.10,none
